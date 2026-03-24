@@ -37,7 +37,7 @@ jobs:
   deploy-development:
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
-    environment: Preview
+    environment: Development
     steps:
       - uses: actions/checkout@v4
       - name: Deploy Vercel Development
